@@ -13,7 +13,8 @@ This project implements an HR chatbot that can answer questions about human reso
 ```
 LLM_Tp1/
 ├── HR.txt                  # HR knowledge base (35,132 characters)
-├── tp1_chatbot_hr.py      # Main chatbot script ⭐
+├── tp1_chatbot_hr.py      # Main chatbot script (Terminal)
+├── app.py                 # Web interface (Streamlit) ⭐ NEW
 ├── test_tp1.py            # Automated tests
 ├── demo_rapide.py         # Quick demo with metrics
 ├── requirements.txt       # Python dependencies
@@ -43,6 +44,13 @@ Expected output: `[SUCCESS] ALL TESTS PASSED!`
 
 ### 3. Launch the Chatbot
 
+**Option A: Web Interface (Recommended)** 🌐
+```bash
+streamlit run app.py
+```
+Then open your browser at `http://localhost:8501`
+
+**Option B: Terminal Interface** 💻
 ```bash
 python tp1_chatbot_hr.py
 ```
@@ -51,6 +59,36 @@ python tp1_chatbot_hr.py
 
 ```bash
 python demo_rapide.py
+```
+
+## 🌐 Web Interface Features
+
+The Streamlit web interface (`app.py`) provides:
+
+- **💬 Chat Interface**: Modern conversational UI
+- **📊 Confidence Scores**: See how confident the bot is
+- **🎯 Quick Questions**: Pre-defined question buttons
+- **📝 Chat History**: Keep track of your conversation
+- **🔄 Clear History**: Start fresh anytime
+- **📈 Statistics**: View message counts
+- **🎨 Beautiful Design**: Professional and responsive layout
+
+### Web Interface Preview
+
+```
+💼 HR Chatbot Assistant
+├── Main Chat Area
+│   ├── User messages (blue)
+│   └── Bot responses (green) with confidence scores
+├── Sidebar
+│   ├── About & Tips
+│   ├── Example questions
+│   └── Clear history button
+└── Quick Start Buttons
+    ├── What is HR analytics?
+    ├── Tell me about recruitment
+    ├── What are employee rights?
+    └── Tell me about compensation
 ```
 
 ## 💬 Usage Examples
